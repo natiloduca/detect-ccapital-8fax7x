@@ -27,3 +27,10 @@
  * Create your own fork from the exercise "Mission 01"
  * 
  */
+const materials = [
+  'USA',
+  'Flag',
+  'Lithium',
+];
+
+materials.map(material => console.log(material + '='+ String(material.toUpperCase() === material)));
