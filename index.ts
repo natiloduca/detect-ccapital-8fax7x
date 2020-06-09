@@ -21,16 +21,24 @@
  * Output: False
  *
  * Develop the arrow function to perform the 3 conditions.
- * 
+ *
  * Note: The input will be a non-empty word consisting of uppercase and lowercase latin letters.
- * 
+ *
  * Create your own fork from the exercise "Mission 01"
- * 
+ *
  */
-const materials = [
-  'USA',
-  'Flag',
-  'Lithium',
-];
+/*var form = document.forms.info;
+var input = form.elements; da error pero anda*/
 
-materials.map(material => console.log(material + '='+ String(material.toUpperCase() === material)));
+let inputElement = <HTMLInputElement>document.getElementById('txtIntro');
+let result = document.getElementById('result');
+let isCapitalOnly = (value) => String(value.toUpperCase() === value);
+
+inputElement.addEventListener('input', function(e) {
+   (this.value.length)? result.innerHTML = isCapitalOnly(this.value): false;
+});
+
+/*const materials = ["USA", "Flag", "Lithium"];
+materials.map(material =>
+  console.log(material + "=" + String(material.toUpperCase() === material))
+);*/
