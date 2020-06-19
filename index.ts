@@ -27,18 +27,18 @@
  * Create your own fork from the exercise "Mission 01"
  *
  */
-/*var form = document.forms.info;
-var input = form.elements; da error pero anda*/
 
-let inputElement = <HTMLInputElement>document.getElementById('txtIntro');
+/*let inputElement = <HTMLInputElement>document.getElementById('txtIntro');
 let result = document.getElementById('result');
 let isCapitalOnly = (value) => String(value.toUpperCase() === value);
 
 inputElement.addEventListener('input', function(e) {
    (this.value.length)? result.innerHTML = isCapitalOnly(this.value): false;
-});
+});*/
 
 /*const materials = ["USA", "Flag", "Lithium"];
 materials.map(material =>
   console.log(material + "=" + String(material.toUpperCase() === material))
 );*/
+let str = 'USA';
+console.log(str.toUpperCase() === str);
