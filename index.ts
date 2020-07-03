@@ -84,3 +84,4 @@ const isPerfectSquare = num => {
 };
 
 export { isPerfectSquare };
+console.log(isPerfectSquare(4));
